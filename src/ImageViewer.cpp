@@ -304,10 +304,10 @@ ImageViewer::ImageViewer(
             "(i - r)²\n\n"
 
             "RAE (Relative Absolute Error)\n"
-            "|i - r| / (r + 0.01)\n\n"
+            "|i - r| / (r + 0.0001)\n\n"
 
             "RSE (Relative Squared Error)\n"
-            "(i - r)² / (r² + 0.01)"
+            "(i - r)² / (r² + 0.0001)"
         );
     }
 

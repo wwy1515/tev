@@ -295,8 +295,8 @@ UberShader::UberShader(RenderPass* renderPass) {
                     case ERROR:                   return col;
                     case ABSOLUTE_ERROR:          return abs(col);
                     case SQUARED_ERROR:           return col * col;
-                    case RELATIVE_ABSOLUTE_ERROR: return abs(col) / (reference + float3(0.01f));
-                    case RELATIVE_SQUARED_ERROR:  return col * col / (reference * reference + float3(0.01f));
+                    case RELATIVE_ABSOLUTE_ERROR: return abs(col) / (reference + float3(0.0001f));
+                    case RELATIVE_SQUARED_ERROR:  return col * col / (reference * reference + float3(0.0001f));
                 }
                 return float3(0.0f);
             }
